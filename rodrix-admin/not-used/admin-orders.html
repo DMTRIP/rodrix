@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rodrix - Dashboard</title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <img class="sidebar-logo" src="img/logo.png" alt="logo">
+        </div>
+        <div class="sidebar-bottom">
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item sidebar-list-item-profile active"><a href="#" class="sidebar-list-link">My Profile</a></li>
+                <li class="sidebar-list-item sidebar-list-item-orders"><a href="#" class="sidebar-list-link">Orders</a></li>
+                <li class="sidebar-list-item sidebar-list-item-payments"><a href="#" class="sidebar-list-link">Payments</a></li>
+                <li class="sidebar-list-item sidebar-list-item-customers"><a href="#" class="sidebar-list-link">Customers</a></li>
+                <li class="sidebar-list-item sidebar-list-item-applications"><a href="#" class="sidebar-list-link">Account Applications</a></li>
+                <li class="sidebar-list-item sidebar-list-item-logout "><a href="#" class="sidebar-list-link">Logout</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- /sidebar -->
+    <div class="content">
+        <!-- header -->
+        <header class="header">
+            <div class="header-content header-content-full d-flex justify-content-between align-items-center">
+                <h1 class="header-title">Orders</h1>
+                <!-- search -->
+                <div class="admin-search search">
+                    <label class="search-label" for="search"><i class="material-icons">search</i></label><input id="search" class="search-input" type="text" placeholder="simon@marbros.ca">
+                </div>
+                <!-- /search -->
+                <span class="btn btn-red btn-200">+ Add New Customer</span>
+            </div>
+        </header>
+        <!-- /header -->
+        <main>
+            <div class="admin">
+                <div class="admin-content">
+                    <div>
+                        <table class="admin-table table mt-20 mb-120">
+                            <thead>
+                                <tr>
+                                    <th>Order Number</th>
+                                    <th>Customer</th>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Folder</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-light-grey">
+                                    <td>17858</td>
+                                    <td>MARBROCON</td>
+                                    <td>Deposit funds by customername</td>
+                                    <td>$ 1001230,12</td>
+                                    <td><span class="badge badge-blue">Submitted</span></td>
+                                    <td>Job Site A</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="bg-light-grey">
+                                    <td class="submit-cell" colspan="7">
+                                        <table class="submit-table table">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="8" class="submit-heading">
+                                                       Sales Order: <span class="bold">#121244</span>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Description</th>
+                                                    <th>Ordered</th>
+                                                    <th>Shipped</th>
+                                                    <th>Measure</th>
+                                                    <th>Unit Weight</th>
+                                                    <th>Price</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>SDHHZ143</td>
+                                                    <td>1-1/8x9 Grade 2 *Black NC Hex Bolts</td>
+                                                    <td>1.00</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>$1000.00</td>
+                                                    <td>100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SDHHZ143</td>
+                                                    <td>1-1/8x9 Grade 2 *Black NC Hex Bolts</td>
+                                                    <td>1.00</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>$1000.00</td>
+                                                    <td>100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SDHHZ143</td>
+                                                    <td>1-1/8x9 Grade 2 *Black NC Hex Bolts</td>
+                                                    <td>1.00</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>$1000.00</td>
+                                                    <td>100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SDHHZ143</td>
+                                                    <td>1-1/8x9 Grade 2 *Black NC Hex Bolts</td>
+                                                    <td>1.00</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>$1000.00</td>
+                                                    <td>100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SDHHZ143</td>
+                                                    <td>1-1/8x9 Grade 2 *Black NC Hex Bolts</td>
+                                                    <td>1.00</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>1.0</td>
+                                                    <td>$1000.00</td>
+                                                    <td>100.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="submit-btn btn btn-sm btn-sm-rds btn-solid-green">Confirm</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17858</td>
+                                    <td>MARBROCON</td>
+                                    <td>Deposit funds by customername</td>
+                                    <td>$ 1001230,12</td>
+                                    <td><span class="badge badge-green">Confirmed</span></td>
+                                    <td>Job Site A</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>17858</td>
+                                    <td>MARBROCON</td>
+                                    <td>Deposit funds by customername</td>
+                                    <td>$ 1001230,12</td>
+                                    <td><span class="badge badge-green">Sales Order</span></td>
+                                    <td>Job Site A</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>17858</td>
+                                    <td>MARBROCON</td>
+                                    <td>Deposit funds by customername</td>
+                                    <td>$ 1001230,12</td>
+                                    <td><span class="badge badge-green">Sales Order</span></td>
+                                    <td>Job Site A</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+        </footer>
+        <!-- /footer -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

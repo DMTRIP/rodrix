@@ -1,0 +1,112 @@
+// Bootstrap variables overriding
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px //  1200px
+) !default;
+
+// Bootstrap imports
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+
+// @import "../../node_modules/bootstrap/scss/utilities/_align.scss";
+@import "../../node_modules/bootstrap/scss/utilities/borders";
+@import "../../node_modules/bootstrap/scss/utilities/display";
+@import "../../node_modules/bootstrap/scss/utilities/flex";
+// @import "../../node_modules/bootstrap/scss/utilities/_overflow";
+@import "../../node_modules/bootstrap/scss/utilities/position";
+@import "../../node_modules/bootstrap/scss/utilities/sizing";
+@import "../../node_modules/bootstrap/scss/utilities/spacing";
+@import "../../node_modules/bootstrap/scss/utilities/float";
+@import "../../node_modules/bootstrap/scss/utilities/text";
+// @import "../../node_modules/bootstrap/scss/_badge";
+// @import "../../node_modules/bootstrap/scss/utilities/_visibility";
+
+@import '../../node_modules/reset-css/sass/reset';
+
+$root-font-size: 16;
+$root-line-height: 1.35;
+// $root-line-height: 1.2;
+$grey: #92949D;
+$light-grey: #D0D0D0;
+$light-hint-grey: #DDDEE4;
+$very-light-grey: #F5F5F5;
+$white: #fff;
+$green: #75B472;
+$orange: #F18805;
+$red: #FB333E;
+$dark-blue: #353a4d;
+$light-blue: #415a77;
+$content-bg-color: #fcfcfc;
+$blue: #2f80ed;
+
+$popup-zi: 20;
+$catalog-zi: $popup-zi - 1;
+$shadowed-zi: $catalog-zi - 1;
+$search-zi: $popup-zi - 1;
+
+$margins: 12, 16, 20, 24, 30, 36, 40, 50, 60, 70, 90, 120;
+$btn-widths: 200, 300;
+$offer-card-colors: (
+	class: red, 
+	color: $red
+), (
+	class: green,
+	color: $green
+), (
+	class: blue,
+	color: $light-blue
+), (
+	class: orange,
+	color: $orange
+);
+$fonts: (
+  font-family: Lato,
+  file-name: Lato-Regular,
+  local-name: Lato Regular,
+  weight: normal
+), (
+  font-family: Lato,
+  file-name: Lato-Medium,
+  local-name: Lato Medium,
+  weight: 500
+), (
+  font-family: Lato,
+  file-name: Lato-Semibold,
+  local-name: Lato Semibold,
+  weight: 600
+), (
+  font-family: Lato,
+  file-name: Lato-Bold,
+  local-name: Lato Bold,
+  weight: bold
+), (
+  font-family: Lato,
+  file-name: Lato-Black,
+  local-name: Lato Black,
+  weight: 900
+);
+
+@import "general";
+// @import "footer";
+@import "header";
+@import "sidebar";
+@import "profile";
+@import "orders";
+@import "payments";
+@import "new-order";
+@import "admin";
+
+// @import "search";
+// @import "homepage";
+// @import "order-successful";
+// @import "company-account";
+// @import "popup";
+// @import "contacts";
+// @import "product";
+// @import "cart";
+// @import "category";

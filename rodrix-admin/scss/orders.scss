@@ -1,0 +1,405 @@
+.orders {
+    $topbar-height: 6.25rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+
+    &-content {
+        background-color: $content-bg-color;
+        width: 100%;
+    }
+
+    &-invoice {
+        margin-left: 4.25rem;
+        margin-right: 4.25rem;
+    }
+
+    &-table {
+        font-size: 0.875rem;
+
+        >thead {
+            >tr {
+                >th {
+                    padding: 1.125rem 1.875rem;
+
+                    &:first-of-type {
+                        padding-left: 4.25rem;
+                        padding-right: 1.25rem;
+                    }
+
+                    // &:last-of-type {
+                    //     padding-right: 4.25rem;
+                    // }
+                }
+            }
+        }
+
+        >tbody {
+            >tr {                
+                >td {
+                    padding: 1.125rem 1.875rem;
+
+                    &:first-of-type {
+                        padding-left: 4.25rem;
+                        padding-right: 1.25rem;
+
+                    }
+
+                    // &:last-of-type {
+                    //     padding-right: 4.25rem;
+                    // }
+                }
+            }
+        }
+    }
+
+    &-search {
+        padding: 2.5rem 4.25rem;
+        height: $topbar-height;
+        border-bottom: 0.0625rem solid $very-light-grey;
+    }
+
+    &-folders {
+        .folders {
+            &-header {
+                height: $topbar-height;
+            }
+        }
+    }
+
+    &-breadcrumbs {
+        margin-left: 4.25rem;
+        margin-right: 4.25rem;
+    }
+}
+
+.breadcrumbs {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: $grey;
+
+    &-current {
+        font-weight: 700;
+        color: $dark-blue;
+    }
+}
+
+.tabel {
+    color: #454b60;
+  width: 100%;
+  border-collapse: collapse;
+  vertical-align: middle;
+  
+  &-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    .dark {
+        color: #454B60;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;}
+      .list-item {
+        padding: 15px;
+        width: 100%;
+    
+        display: flex;
+        align-items: flex-start;
+
+        .item {
+            width: 100%;
+            max-width: 200px;
+
+            .item-img{
+                width: 28px;
+                height: 28px;
+              }
+          }
+          .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        
+          .width-big {
+            width: 100%;
+            max-width: 350px;
+          }
+      }
+
+
+  }
+}
+
+.folders {
+    // overflow-y: scroll;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    border-right: 0.0625rem solid $very-light-grey;
+    min-width: 24.313rem;
+    // flex-basis: 24.313rem;
+    // flex-shrink: 1;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 2.1875rem 1.5625rem 2.1875rem 3.75rem;
+        border-bottom: 0.0625rem solid $very-light-grey;
+
+        &-icon {
+            cursor: pointer;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        color: $dark-blue;
+        padding: 1.375rem 1.375rem 1.375rem 6.875rem;
+        border-bottom: 0.0625rem solid $very-light-grey;
+
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 1.875rem;
+            height: 1.375rem;
+            left: 3.4375rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: url('../img/icons/folder.svg');
+        }
+
+        &-icon {
+            margin-left: auto;
+            color: $light-hint-grey;
+        }
+
+        &.active {
+            background-color: $dark-blue;
+            color: $white;
+
+            &::before {
+                background-image: url('../img/icons/folder-active.svg');
+            }
+
+            .folders {
+                &-item {
+                    &-icon {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invoice {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-shrink: 2;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        margin: 0.3125rem;
+        width: 8.25rem;
+        height: 8.25rem;
+        box-shadow: 0 0 2.188rem rgba(38, 42, 59, 0.08);
+        border-radius: 0.25rem;
+        background-color: #ffffff;
+        padding: 0.9375rem;
+        cursor: pointer;
+
+        &-icon {
+            display: inline-block;
+            color: $green;
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        &-heading {
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1;
+            margin-top: 0.75rem;
+        }
+
+        &-subheading {
+            font-size: 0.563rem;
+            font-weight: 400;
+            line-height: 1.28;
+        }
+
+        &-folder {
+            justify-content: center;
+
+            .invoice {
+                &-item {
+                    &-heading {
+                        margin-top: 1.25rem;
+                    }
+
+                    &-icon {
+                        display: inline-block;
+                        width: 2.5rem;
+                        height: auto;
+                    }
+                }
+            }
+
+            &-new {
+                justify-content: center;
+                box-shadow: none;
+                border: 0.063rem dashed #d0d0d0;
+                background-color: transparent;
+
+                .invoice {
+                    &-item {
+                        &-heading {
+                            // margin-top: 1.5625rem;
+                            color: $grey;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            line-height: 1;
+                        }
+
+                        &-icon {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-file {
+            // display: flex;
+            // flex-direction: column;
+            justify-content: flex-end;
+            // align-items: center;
+            // position: relative;
+            // margin: 0.3125rem;
+            // width: 8.25rem;
+            // height: 8.25rem;
+            // box-shadow: 0 0 2.188rem rgba(38, 42, 59, 0.08);
+            // border-radius: 0.25rem;
+            // background-color: #ffffff;
+            // padding: 0.9375rem;
+            // cursor: pointer;
+
+            &::before {
+                position: absolute;
+                left: 0.75rem;
+                top: 0.75rem;
+                content: '';
+                width: 0.375rem;
+                height: 0.375rem;
+                border-radius: 50%;
+                background-color: $green;
+            }
+
+            &.green {
+                border: 0.063rem solid $green;
+                background-color: rgba($green, 0.1);
+
+                &::before {
+                    background-color: $green;
+                }
+
+                .invoice {
+                    &-item {
+                        &-icon {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            &.orange {
+                border: 0.063rem solid $orange;
+                background-color: rgba($orange, 0.1);
+
+                &::before {
+                    background-color: $orange;
+                }
+
+                .invoice {
+                    &-item {
+                        &-icon {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            &.red {
+                border: 0.063rem solid $red;
+                background-color: rgba($red, 0.1);
+
+                &::before {
+                    background-color: $red;
+                }
+
+                .invoice {
+                    &-item {
+                        &-icon {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+
+            &.grey {
+                // border: 0.063rem solid $grey;
+                background-color: rgba($grey, 0.1);
+
+                &::before {
+                    background-color: $grey;
+                }
+
+                .invoice {
+                    &-item {
+                        &-icon {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+
+    &-label {
+        line-height: 1;
+        height: 1.5rem;
+        margin: 0;
+    }
+
+    &-input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        margin-left: 0.625rem;
+        outline: none;
+    }
+}

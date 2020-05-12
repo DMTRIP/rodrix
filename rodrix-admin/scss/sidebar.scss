@@ -1,0 +1,144 @@
+.sidebar {
+    position: relative;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #FDFDFD;
+    border-right: 0.063rem solid $very-light-grey;
+    width: 13.688rem;
+
+    &-top {
+        padding: 1.875rem;
+        border-bottom: 0.063rem solid $very-light-grey;
+        height: 7.1875rem;
+    }
+
+    &-bottom {
+        padding: 2.25rem 1.875rem 1.25rem 1.875rem;
+        // height: 100%;
+
+    }
+
+    &-logo {
+        mix-blend-mode: multiply;
+    }
+
+    &-list {
+        @extend %list-reset;
+        display: flex;
+        flex-direction: column;
+        // height: 100%;
+
+        &-item {
+            position: relative;
+            padding-left: 2rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.21;
+            white-space: nowrap;
+            font-weight: 400;
+
+            &~& {
+                margin-top: 2.1875rem;
+            }
+
+            &.active {
+                position: relative;
+                font-weight: 700;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -1.875rem;
+                    top: 40%;
+                    width: 0.3125rem;
+                    height: 1.625rem;
+                    background-color: $red;
+                    transform: translateY(-50%);
+                }
+
+                .sidebar-list-link {
+                    color: $dark-blue;
+
+                    &:hover {
+                        color: lighten($dark-blue, 20%);
+                    }
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                @extend %bg-default;
+
+            }
+
+            &-home {
+                &::after {
+                    background-image: url('../img/icons/home-icon.svg');
+                }
+            }
+
+            &-profile {
+                &::after {
+                    background-image: url('../img/icons/profile-icon.svg');
+                }
+            }
+
+            &-orders {
+                &::after {
+                    width: 1rem;
+                    height: 0.875rem;
+                    background-image: url('../img/icons/orders-icon.svg');
+                }
+            }
+
+            &-payments {
+                &::after {
+                    background-image: url('../img/icons/payments-icon.svg');
+                }
+            }
+
+            &-customers {
+                &::after {
+                    background-image: url('../img/icons/customers-icon.svg');
+                }
+            }
+
+            &-applications {
+                &::after {
+                    background-image: url('../img/icons/applications-icon.svg');
+                }
+            }
+
+
+            &-logout {
+                position: absolute;
+                left: 2rem;
+                bottom: 1.875rem;
+
+                &::after {
+                    background-image: url('../img/icons/logout-icon.svg');
+                }
+            }
+        }
+
+        &-link {
+            color: $grey;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                color: lighten($grey, 20%);
+            }
+        }
+    }
+}

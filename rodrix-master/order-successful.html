@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rodrix</title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- header top -->
+        <div class="header-top d-none d-sm-block">
+            <div class="container header-top-container d-flex align-items-center">
+                <span class="header-top-contacts">
+                    <i class="material-icons header-top-contacts-icon">phone</i>
+                    <span class="header-top-contacts-phone">519-664-2452</span>
+                    <i class="material-icons header-top-contacts-caret">arrow_drop_down</i>
+                </span>
+                <nav>
+                    <ul class="header-top-menu">
+                        <li class="header-top-menu-item"><a href="contacts.html"
+                                class="header-top-menu-link">Contact</a></li>
+                        <li class="header-top-menu-item"><a href="#" class="header-top-menu-link">About</a></li>
+                        <li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Shipping</a></li>
+                    </ul>
+                </nav>
+                <span class="header-top-login">
+                    <i class="material-icons header-top-login-icon">account_circle</i>
+                    <span class="header-top-login-user">Log in to your account</span>
+                    <i class="material-icons header-top-login-caret">arrow_drop_down</i>
+                </span>
+                <!-- contacts popup -->
+                <div class="popup popup-contacts">
+                    <div class="popup-heading">Contact Phones</div>
+                    <span class="popup-subheading popup-contacts-subheading">Consultations and ordering by
+                        phones:</span>
+                    <ul class="popup-list popup-contacts-phones">
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Phone: 519-664-2452
+                        </li>
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Toll Free: 1-877-964-2452
+                        </li>
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Fax: 519-664-1398
+                        </li>
+                    </ul>
+                    <span class="popup-subheading popup-contacts-subheading">Call-center schedule:</span>
+                    <ul class="popup-list">
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Monday - Thursday:
+                            <span class="float-right">7:30am - 5:00pm</span>
+                        </li>
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Friday: <span class="float-right">7:30am - 5:00pm</span>
+                        </li>
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Saturday - Sunday: <span class="float-right">Closed</span>
+                        </li>
+                        <li class="popup-list-item popup-contacts-list-item">
+                            Holidays: <span class="float-right">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /contacts popup -->
+                <!-- login popup -->
+                <div class="popup popup-login">
+                    <ul class="popup-list popup-login-list">
+                        <li class="popup-list-item popup-login-list-item"><a href="#" class="popup-login-link">Company
+                                Account<i class="material-icons popup-login-list-icon">keyboard_arrow_right</i></a></li>
+                        <li class="popup-list-item popup-login-list-item"><a href="#" class="popup-login-link">Cart<i
+                                    class="material-icons popup-login-list-icon">keyboard_arrow_right</i></a></li>
+                        <li class="popup-list-item popup-login-list-item"><a href="#" class="popup-login-link">My
+                                Orders<i class="material-icons popup-login-list-icon">keyboard_arrow_right</i></a></li>
+                    </ul>
+                    <a href="#" class="popup-login-link popup-login-signout">Sign Out</a>
+                </div>
+                <!-- /login popup -->
+            </div>
+        </div>
+        <!-- /header top -->
+        <div class="header-bottom">
+            <div
+                class="container header-bottom-container justify-content-between align-items-start align-items-sm-center">
+                <span class="header-bottom-logo">
+                    <img src="img/logo.png" alt="logo" class="header-bottom-logo-img">
+                </span>
+                <span class="header-top-contacts d-block d-sm-none">
+                    <i class="material-icons header-top-contacts-icon">phone</i>
+                    <span class="header-top-contacts-phone">519-664-2452</span>
+                    <i class="material-icons header-top-contacts-caret">arrow_drop_down</i>
+                </span>
+                <span class="d-none d-md-flex header-bottom-btn btn btn-very-light-grey">
+                    <i class="material-icons header-bottom-btn-icon">clear_all</i><span
+                        class="header-bottom-btn-text">View
+                        Product Catalogue</span>
+                </span>
+                <!-- search -->
+                <span class="d-none d-md-block header-bottom-search search field field-light-grey">
+                    <i class="material-icons search-icon d-none d-md-block">search</i>
+                    <input class="search-input field-input d-md-block" type="text" placeholder="Split Lock Washers">
+                    <div class="search-results container">
+                        <div class="row">
+                            <!-- search results -->
+                            <div class="search-looking col-md-5 search-results-left-col">
+                                <div class="search-results-content search-results-content-separated">
+                                    <div class="search-results-heading">Often Looking</div>
+                                    <ul class="search-results-list mt-0 mt-md-24">
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">U-Bolts (Custom)</a></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">U-Bolts</a></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">U-Bolts Plates</a></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Square U-Bolts (Nuts &amp; Plate)</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="search-results-showall mt-16">Show all results</a>
+                                </div>
+                                <div class="d-none d-md-block search-results-content">
+                                    <div class="search-results-heading">Search in Category</div>
+                                    <ul class="search-results-list mt-16">
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Bolts</a></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">U-Bolts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-popular col-md-7">
+                                <div class="search-results-content search-results-popular-content">
+                                    <div class="search-results-heading">Popular Goods</div>
+                                    <div class="search-results-popular">
+                                        <div class="search-results-popular-item">
+                                            <div class="search-results-popular-miniature">
+                                                <img class="search-results-popular-miniature-img"
+                                                    src="img/search-item.jpg" alt="">
+                                            </div>
+                                            <div class="search-results-popular-text">
+                                                <h6 class="search-results-popular-title">
+                                                    <a href="#" class="search-results-popular-link">U-Bolts (Custom)</a>
+                                                </h6>
+                                                <span class="search-results-popular-price">$0.44/prc.</span>
+                                            </div>
+                                        </div>
+                                        <div class="search-results-popular-item">
+                                            <div class="search-results-popular-miniature">
+                                                <img class="search-results-popular-miniature-img"
+                                                    src="img/search-item.jpg" alt="">
+                                            </div>
+                                            <div class="search-results-popular-text">
+                                                <h6 class="search-results-popular-title">
+                                                    <a href="#" class="search-results-popular-link">U-Bolts (Custom)</a>
+                                                </h6>
+                                                <span class="search-results-popular-price">$0.44/prc.</span>
+                                            </div>
+                                        </div>
+                                        <div class="search-results-popular-item d-none d-md-flex">
+                                            <div class="search-results-popular-miniature">
+                                                <img class="search-results-popular-miniature-img"
+                                                    src="img/search-item.jpg" alt="">
+                                            </div>
+                                            <div class="search-results-popular-text">
+                                                <h6 class="search-results-popular-title">
+                                                    <a href="#" class="search-results-popular-link">U-Bolts (Custom)</a>
+                                                </h6>
+                                                <span class="search-results-popular-price">$0.44/prc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /search results -->
+                            <!-- search history -->
+                            <div class="d-md-none search-recent col-12">
+                                <div class="search-results-content">
+                                    <ul class="search-results-list">
+                                        <li class="search-results-list-item"><a href="#"
+                                                class="search-results-list-link">U-bolts</a><span
+                                                class="search-results-list-icon float-right">&times;</span></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Nuts</a><span
+                                                class="search-results-list-icon float-right">&times;</span></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Anchor Bolts</a><span
+                                                class="search-results-list-icon float-right">&times;</span></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Square U-Bolts (Nuts & Plate)</a><span
+                                                class="search-results-list-icon float-right">&times;</span></li>
+                                        <li class="search-results-list-item mt-16"><a href="#"
+                                                class="search-results-list-link">Nylon Insert Lock Nuts</a><span
+                                                class="search-results-list-icon float-right">&times;</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /search history -->
+                            <!-- search no-results -->
+                            <!-- <div class="col-12">
+                                <div class="search-results-content">
+                                    <ul class="search-results-list">
+                                        <li class="search-results-list-item">There was nothing found on your request. Refine your request</li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <!-- /search no-results -->
+                        </div>
+                    </div>
+                </span>
+                <!-- /search -->
+                <span class="d-none d-sm-block header-bottom-cart">
+                    <i class="material-icons header-bottom-cart-icon">shopping_cart</i>
+                </span>
+                <!-- cart popup -->
+                <div class="popup popup-cart empty">
+                    <div class="d-flex">
+                        <i class="material-icons popup-cart-icon">shopping_cart</i>
+                        <div class="d-flex flex-column">
+                            <div class="popup-heading popup-cart-heading">Your Basket is empty</div>
+                            <div class="popup-subheading popup-cart-subheading">Add your favorite items to the Basket
+                            </div>
+                            <!-- <div class="popup-subheading popup-cart-subheading">2 items in the shopping cart</div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /cart popup -->
+                <!-- catalog pop-up -->
+                <div class="popup popup-catalog">
+                    <div class="popup-catalog-content">
+                        <ul class="catalog-list">
+                            <h6 class="catalog-list-heading">Popular Categories</h6>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Casters/Wheels</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Bits-Drives-Nutsetters</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Turnbuckles</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Rivets</a>
+                            </li>
+                            <li class="catalog-list-item active">
+                                <a class="catalog-list-link" href="#">Rope Accessories</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Thread Locker</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Heavy Duty Pulley's</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Chain Connectors</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Knobs</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Socket Products</a>
+                            </li>
+                            <li class="catalog-list-item">
+                                <a class="catalog-list-link" href="#">Gloves</a>
+                            </li>
+                            <a href="categories-all.html" class="catalog-list-showall mt-24" href="#">Show all
+                                categories</a>
+                        </ul>
+                        <div class="catalog-grid">
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/1.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Hitching Rings</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/2.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Rope Binding Hook</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/3.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Rope Binding Hook (Locking)</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/4.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Hammock Hook Lag Thread</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/5.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Hitching Ring Clamp Style</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/6.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Rope Clamp's</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/7.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Strap Loop's</a>
+                            </div>
+                            <div class="catalog-grid-item">
+                                <div class="catalog-grid-miniature">
+                                    <img class="catalog-grid-miniature-img" src="img/catalog/8.jpg"
+                                        alt="Hitching Rings">
+                                </div>
+                                <a class="catalog-grid-link" href="#">Tarp Rope Hook's</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /catalog pop-up -->
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <main class="d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="order-success text-center">
+                <!-- <img src="img/icons/success.svg"> -->
+                <h2 class="heading-2 order-success-heading">Order Successfully Submitted</h2>
+                <div class="mt-12">In the near future, our operator will contact you for confirmation</div>
+                <div class="btn btn-solid-dark-blue mt-24">Return to main page</div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6 col-lg-4 footer-block-wrapper">
+                        <div class="footer-block">
+                            <h5 class="heading-5 footer-block-heading">Contact Us</h5>
+                            <ul class="footer-block-list mt-16 mt-sm-20">
+                                <li class="footer-block-list-item">Tel: <a class="footer-block-list-link"
+                                        href="#">519-664-2452</a></li>
+                                <li class="footer-block-list-item">Toll free: <a class="footer-block-list-link"
+                                        href="#">1-877-964-2452</a></li>
+                                <li class="footer-block-list-item">Fax: <a class="footer-block-list-link"
+                                        href="#">519-664-1398</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 footer-block-wrapper">
+                        <div class="footer-block">
+                            <h5 class="heading-5 footer-block-heading">Visit Us</h5>
+                            <div class="footer-block-text mt-16 mt-sm-20">
+                                Rodrix Fasteners Ltd.<br />
+                                1868 King Street North RR#1<br />
+                                St. Jacobs, Ontario N0B 2N0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-4 footer-block-wrapper mt-30 mt-md-0">
+                        <div class="footer-block">
+                            <h5 class="heading-5 footer-block-heading">Business Hours</h5>
+                            <ul class="footer-block-list mt-16 mt-sm-20">
+                                <li class="footer-block-list-item">Monday - Thursday: <span class="float-right">7:30am -
+                                        5:00pm</span></li>
+                                <li class="footer-block-list-item">Friday: <span class="float-right">7:30</span>am -
+                                    5:00pm</li>
+                                <li class="footer-block-list-item">Saturday - Sunday: <span
+                                        class="float-right">Closed</span></li>
+                                <li class="footer-block-list-item">Holidays: <span class="float-right">Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container d-flex flex-column align-items-center flex-sm-row justify-content-between">
+                <span class="mt-20 mt-sm-20 mb-sm-20">*New Accounts Welcome. Conditions Apply!</span>
+                <span class="mt-12 mb-36 mt-sm-20 mb-sm-20">© 2019 Rodrix Fasteners</span>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <!-- menu -->
+    <div class="menu d-md-none d-flex flex-column">
+        <div class="container menu-container">
+            <i class="menu-icon material-icons active">home</i>
+            <i class="menu-icon material-icons">clear_all</i>
+            <i id="menu-search-icon" class="menu-icon material-icons">search</i>
+            <i class="menu-icon material-icons">shopping_cart</i>
+            <i class="menu-icon material-icons">account_circle</i>
+        </div>
+    </div>
+    <!-- /menu -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

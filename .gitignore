@@ -1,0 +1,7 @@
+.git
+*log
+*lock*
+Archived
+node_modules
+package-lock.json
+EBMS*

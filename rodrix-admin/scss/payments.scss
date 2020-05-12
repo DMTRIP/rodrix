@@ -1,0 +1,109 @@
+.payments {
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    &-content {
+    	overflow-x: hidden;
+    }
+
+    &-heading {
+    	margin-left: 3.75rem;
+    	margin-top: 2rem;
+    	margin-bottom: 2.375rem;
+    	font-size: 1.875rem;
+		font-weight: 800;
+		line-height: 0.8;
+		color: #171a22;
+    }
+
+    &-btn {
+    	margin-right: 3.75rem;
+    }
+
+    &-outstanding {
+        &-table {
+            >thead {
+                border-bottom: 0.0625rem solid $very-light-grey;
+
+                >tr {
+                    >th {
+                        vertical-align: middle;
+                        padding-left: 1.875rem;
+                        padding-right: 1.875rem;
+
+                        &:first-of-type {
+                            padding-bottom: 0.875rem;
+                            padding-left: 1.25rem;
+                            padding-right: 1.25rem;
+                        }
+
+                        &:nth-of-type(2) {
+                        	padding-left: 0.1875rem;
+                            padding-right: 1.875rem;
+                        }
+                    }
+                }
+            }
+
+            >tbody {
+                >tr {
+                    >td {
+                        vertical-align: middle;
+                        padding-left: 1.875rem;
+                        padding-right: 1.875rem;
+
+                        &:first-of-type {
+                            padding-bottom: 0.875rem;
+                            padding-left: 1.25rem;
+                            padding-right: 1.25rem;
+                        }
+
+                        &:nth-of-type(2) {
+                        	padding-left: 0.1875rem;
+                            padding-right: 1.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-paid {
+        &-table {
+             >thead {
+                border-bottom: 0.0625rem solid #ECEDF1;
+
+                >tr {
+                    >th {
+                        text-align: left;
+                        padding-left: 1.875rem;
+                        padding-right: 1.875rem;
+
+                        &:first-of-type {
+                            padding-left: 3.75rem;
+                            padding-right: 5.625rem;
+                        }
+                    }
+                }
+            }
+
+            >tbody {
+                >tr {
+                    border-bottom: 0.0625rem solid #ECEDF1;
+
+                    >td {
+                        padding-left: 1.875rem;
+                        padding-right: 1.875rem;
+                        vertical-align: middle;
+
+                        &:first-of-type {
+                            padding-left: 3.75rem;
+                            padding-right: 5.625rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.order {
+    display: flex;
+    width: 100%;
+
+    &-content {
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 3.75rem;
+        box-shadow: 0 0.938rem 1.563rem rgba(38, 42, 59, 0.03);
+        // background-color: $white;
+
+        &-text {
+            font-size: 1.625rem;
+            font-weight: 800;
+        }
+    }
+
+    &-total {
+        flex-grow: 1;
+        flex-shrink: 1;
+        // width: 25%;
+        flex-basis: 25%;
+        max-width: 31.875rem;
+    }
+}
+
+.product {
+    color: #262a3b;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.1875rem 3.75rem 1.875rem;
+        color: #171a22;
+        border-bottom: 0.0625rem solid $very-light-grey;
+
+        &-text {
+            font-size: 1.625rem;
+            font-weight: 800;
+        }
+
+        &-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    &-section {
+        padding: 1.875rem 3.75rem 3.75rem;
+
+        &-heading {
+            color: #14112d;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+
+    &-item {
+        border-bottom: 0.0625rem solid $light-hint-grey;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.875rem 3.75rem;
+        }
+
+        &-body {
+            padding: 1.875rem 3.75rem;
+            border-top: 0.0625rem solid $very-light-grey;
+            border-bottom: 0.0625rem solid $very-light-grey;
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.875rem 3.75rem;
+        }
+
+        &-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        &-icon {
+            font-size: 1.25rem;
+            color: $grey;
+            cursor: pointer;
+
+            &~& {
+                margin-left: 1.25rem;
+            }
+
+            &-delete {
+                color: $red;
+            }
+        }
+
+        &-value {
+            font-weight: 700;
+            margin-left: 0.625rem;
+            text-align: right;
+        }
+
+        &-name {
+            color: $red;
+        }
+
+        &-price {
+            color: $red;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.total {
+    // overflow-y: scroll;
+    // line-height: 1;
+    // flex-basis: 24.313rem;
+    // flex-shrink: 1;
+    $container-padding: 3rem;
+    color: #262a3b;
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color: $very-light-grey;
+    border-left: 0.0625rem solid $very-light-grey;
+
+
+    &-header {
+        padding: $container-padding;
+        padding-bottom: 1rem;
+        border-bottom: 0.0625rem solid $very-light-grey;
+    }
+
+    &-section {
+        padding: $container-padding;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.0625rem solid $very-light-grey;
+    }
+
+    &-bottom {
+        padding: $container-padding;
+        padding-top: 5.625rem;
+        padding-bottom: 3.75rem;
+    }
+
+    &-value {
+        text-align: right;
+        margin-left: 0.625rem;
+    }
+
+    &-heading {
+        color: #171a22;
+        font-size: 1.875rem;
+        font-weight: 800;
+        margin-bottom: 0;
+    }
+
+    &-price {
+        color: $red;
+        font-size: 1.875rem;
+        font-weight: 700;
+    }
+
+    &-list {
+        padding: $container-padding;
+        padding-top: 0.75rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 0.0625rem solid $very-light-grey;
+
+        @extend %list-reset;
+
+        &-item {
+            display: inline-block;
+            font-size: 1rem;
+            margin-top: 1.125rem;
+            margin-bottom: 1.125rem;
+            display: flex;
+            justify-content: space-between;
+            color: #262a3b;
+            font-weight: 400;
+        }
+    }
+}

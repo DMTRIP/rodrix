@@ -1,0 +1,35 @@
+.profile {
+	&-content {
+		margin: 2.1875rem 3.75rem 3.75rem;
+		width: 100%;
+	}
+	&-heading {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.04;
+	}
+	&-actions {
+		display: flex;
+		justify-content: flex-end;
+
+		&-btn {
+			&~& {
+				margin-left: 2.25rem;
+			}
+		}
+	}
+	&-textarea {
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 9.875rem;
+	}
+
+	&-row {
+		margin-left: -1.875rem;
+		margin-right: -1.875rem;
+	}
+	&-col {
+		padding-left: 1.875rem;
+		padding-right: 1.875rem;
+	}
+}

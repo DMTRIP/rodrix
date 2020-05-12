@@ -1,0 +1,34 @@
+{
+  "comments" : { "a" : "There is no such thing as a comment in a JSON file, so we do it like this ;v)",
+
+                 "z" : "(last line. please leave in place)"
+  },
+
+  "SQLConnection" : {
+    "host"               : "localhost"        ,
+    "port"               : "3306"             ,
+    "user"               : "rodrix"           ,
+    "password"           : "rodrix"           ,
+    "database"           : "rodrix"           ,
+    "properties"         : { "useSSL" : false},
+    "multipleStatements" : true,
+
+    "description"        : "Karls Dev Data"
+  },
+
+  "HiddenIDs" : [ {"id":"68",  "desc":"EMB"                     },
+                  {"id":"234", "desc":"MISC."                   },
+                  {"id":"280", "desc":"NON INVENTORY"           },
+                  {"id":"512", "desc":"SIMPSON"                 },
+                  {"id":"591", "desc":"Z-NOT TO SHOW ON WEBSITE"}
+                ],
+
+  "path" : {
+             "master"    : "rodrix-master",
+             "admin"     : "rodrix-admin"
+           },
+
+  "keyFile" : ".../___.key",
+  "crtFile" : ".../___.crt"
+
+}
